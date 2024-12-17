@@ -5,7 +5,7 @@ import axios from "axios";
 export const getDetails = async () => {
   try {
     const response = await axios.get(
-      "http://localhost:5000/details/all-detail"
+      "https://web-task-server-neon.vercel.app/details/all-detail"
     );
     return response.data;
   } catch (error) {
@@ -15,7 +15,7 @@ export const getDetails = async () => {
 };
 
 export const deleteDetail = async (deleteID) => {
-  let URL = "http://localhost:5000/details/delete-detail";
+  let URL = "https://web-task-server-neon.vercel.app/details/delete-detail";
   try {
     const response = await axios.post(URL, {
       detailID: deleteID,

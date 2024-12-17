@@ -49,7 +49,7 @@ const AddDetails = () => {
 
       const submitDetails = async () => {
         try {
-          const response = await axios.post('http://localhost:5000/details/add-detail', formData, {
+          const response = await axios.post('https://web-task-server-neon.vercel.app/details/add-detail', formData, {
             headers: {
               'Content-Type': 'application/json',
             },
