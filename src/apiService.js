@@ -27,3 +27,24 @@ export const deleteDetail = async (deleteID) => {
     throw error;
   }
 };
+
+
+
+//! ALL DYNAMIC CATEGORIES
+
+export const allCategories = async() =>{
+
+  let URL = "http://localhost:5000/category/all-category";
+
+  try {
+
+    const response = await axios.post(URL);
+
+    
+    return response.data
+    
+  } catch (error) {
+    console.error("Error fetching details:", error);
+    throw error;
+  }
+}
