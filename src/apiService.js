@@ -38,6 +38,8 @@ export const allCategories = async() =>{
 
   try {
 
+
+    
     const response = await axios.post(URL);
 
     
