@@ -2,6 +2,7 @@
   "name": "web-task",
   "private": true,
   "version": "0.0.0",
+  "proxy": "https://web-task-server-neon.vercel.app/",
   "type": "module",
   "scripts": {
     "dev": "vite",
