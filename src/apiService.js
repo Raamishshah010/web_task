@@ -34,7 +34,7 @@ export const deleteDetail = async (deleteID) => {
 
 export const allCategories = async() =>{
 
-  let URL = "http://localhost:5000/category/all-category";
+  let URL = "https://web-task-server-neon.vercel.app/category/all-category";
 
   try {
 
